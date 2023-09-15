@@ -1,0 +1,628 @@
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #777777;
+    text-align: left;
+    background-color: #F1F6FF;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+    
+::-webkit-scrollbar-track {
+background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+background: transparent; 
+border: 2px;
+border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: transparent; 
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block; 
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; 
+}
+
+  
+.container-fluid {
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto; 
+}
+  
+.row {
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+margin-right: -15px;
+margin-left: -15px; 
+}
+
+.wrapper {
+    height: 100vh;
+    
+}
+
+#sidebar {
+    min-width: 270px;
+    max-width: 270px;
+    background: #fff;
+    overflow-y: auto;
+    color: #DAD9DB;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative; 
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#sidebar .h6 {
+    color: #fff; 
+}
+
+#sidebar.active {
+    margin-left: -270px; 
+}
+
+#sidebar h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px; 
+}
+#sidebar h1 .logo {
+color: #092147; 
+}
+
+#sidebar h1 .logo span {
+    font-size: 14px;
+    color: #2A7AF5;
+    display: block;
+}
+
+#sidebar ul.components {
+    padding: 0; 
+}
+#sidebar ul li {
+    font-size: 16px; 
+}
+
+
+
+#sidebar ul li > ul li {
+    font-size: 14px; 
+}
+
+#sidebar ul li a {
+padding: 12px;
+display: block;
+color: #092147;
+position: relative;
+margin-top: 10px;
+}
+
+
+
+#sidebar ul li a span {
+    color: #092147; 
+}
+
+
+#sidebar ul li a span.active {
+    background-color: #092147; 
+}
+
+#sidebar ul li a:hover {
+    color: #092147; 
+    font-weight: bold;
+    background-color: #F2F6FF;
+    border-radius: 15px;
+}
+
+
+#sidebar ul li.active > a {
+color: #092147; 
+background-color: #D7E8FF;
+border-radius: 15px;
+font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+    #sidebar {
+    margin-left: -270px; }
+    #sidebar.active {
+        margin-left: 0; } 
+}
+
+
+.mr-3,
+.mx-3 {
+margin-right: 1rem !important; 
+}
+
+.list-unstyled {
+    padding-left: 0;
+    list-style: none; 
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent; 
+    outline : none;
+}
+
+a:hover {
+    text-decoration: none; 
+}
+
+
+a:active, a:focus {
+    outline: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.dropdown-menu, .accordion-item, .accordion-body, .accordion-button, .collapsed{
+    border: none;
+    outline: none;
+}
+
+
+.p-4 {
+padding: 1.5rem !important; 
+}
+
+.mb-5, .my-5 {
+margin-bottom: 3rem !important; 
+}
+
+.pageHeader{
+    color: #092147; 
+    font-weight: bold;
+}
+
+.main{
+    padding-top: 9%;
+    padding-right: 9%;
+    padding-left: 9%;
+    margin-left: 200px;
+}
+
+.sub{
+    padding-top: 3%;
+    padding-right: 9%;
+    padding-left: 9%;
+    margin-left: 200px;
+}
+
+.card{
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 50px;
+    font-size: 14px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cardManage{
+    margin-top: 20px;
+    background-color: #f5f9ff;
+    border-radius: 20px;
+    border: none;
+    padding: 40px;
+    font-size: 14px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form-control{
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.search{
+    background-color: #D7E8FF;
+    border: none;
+}
+
+.divider{
+    color: #2A7AF5;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.divider1{
+    color: #2A7AF5;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.formSection{
+    font-size: 17px;
+    color: #2A7AF5;
+    font-weight: bold;
+    width:fit-content;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #D7E8FF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.formSection1{
+    font-size: 17px;
+    color: #2A7AF5;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #D7E8FF;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+.reqColumn{
+    color: #2A7AF5; 
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.reqCard{
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.reqCard:hover{
+    background-color: #F2F6FF;
+    color: #2A7AF5;
+}
+
+.reqHeader{
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.fa-minus-square{
+    color: #F75201;
+    font-size: 20px;
+    float: center;
+}
+
+.fa-plus-square{
+    color: #6AC172;
+    font-size: 20px;
+    float: center;
+    text-align: center;
+}
+
+.addRowButton{
+    font-size: 12px;
+    background-color: #0853C2;
+    width:fit-content;
+    padding: 8px;
+    border-radius: 8px;
+    color: #9CC3FA;
+    margin-top: 10px;
+    cursor: default;
+}
+
+.addRowButton:hover{
+    background-color: #0c4aa7;
+    color: #F2F6FF;
+}
+
+label{
+    color: #2A7AF5; 
+    font-weight: bold;
+}
+
+.btn-primary{
+    background-color: #2A7AF5;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 15px;
+    float: right;
+}
+
+.sendBack{
+    float: left;
+}
+
+.manageReturn{
+    float: left;
+    background-color: #D7E8FF;
+    color: #0c4aa7;
+    border: none;
+}
+
+.manageReturn:hover{
+    background-color: #b9d4fa;
+    color: #0c4aa7;
+
+}
+
+
+.manageReturn1{
+    float: right;
+    background-color: #D7E8FF;
+    color: #0c4aa7;
+    border: none;
+}
+
+.manageReturn1:hover{
+    background-color: #b9d4fa;
+    color: #0c4aa7;
+
+}
+
+.manageForward{
+    float: left;
+    background-color: #D7E8FF;
+    color: #0c4aa7;
+    border: none;
+}
+
+.manageForward:hover{
+    background-color: #b9d4fa;
+    color: #0c4aa7;
+
+}
+
+.manageDownload{
+    float: left;
+}
+
+.form-select{
+    border-radius: 16px;
+    color: #777777;
+}
+
+input:disabled,
+input[disabled]{
+  border: none;
+  background-color: #F1F6FF !important;
+  color: #0853C2;
+}
+
+.paymentMethod{
+    background-color: #0853C2;
+    border-radius: 12px;
+    color: #9CC3FA;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.alternative{
+    background-color: #fff;
+    border-radius: 12px;
+    border: none;
+    color: #777777;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.dropdown-toggle:hover, .dropdown-toggle:focus{
+    background-color: #0c4aa7;
+}
+
+.form-select i{
+    color: #9CC3FA;
+}
+
+.form-select-sm{
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 2px 10px;
+    border: none;
+}
+
+.fa-filter{
+    font-size: 12px;
+}
+
+.filterOption{
+    margin: 0;
+    display: inline-block;
+}
+
+
+.form-select-options{
+    background-color: #D7E8FF;
+    color: #0853C2;
+    border-radius: 8px;
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form-check-inline{
+    margin-left: 70px;
+}
+
+.calculationsLabel{
+    font-size: 16px;
+}
+
+.dropdown-item{
+    color: #0853C2;
+}
+
+.dropdown-item:hover{
+    background-color: #e0edff;
+    color: #0853C2;
+    font-weight: bold;
+}
+
+.number{
+    background-color: #0853C2;
+    padding: 3px;
+    padding-right: 30px;
+    padding-left: 30px;
+    border-radius: 10px;
+    color: #D7E8FF;
+    margin-top: 50px;
+}
+
+.alertRow{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.alert{
+    border-radius: 20px;
+}
+
+
+.animate{
+    animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    animation-delay: 0.1s;
+    animation-name: animate-fade;
+    animation-timing-function: cubic-bezier(.26,.53,.74,1.48);
+    animation-fill-mode: backwards;
+}
+
+.animate.fade {
+    animation-name: animate-fade;
+    animation-timing-function: ease;
+  }
+  @keyframes animate-fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+
+.animate.slide { animation-name: animate-slide; }
+@keyframes animate-slide {
+0% {
+opacity: 0;
+transform: translate(0,20px);
+}
+100% {
+    opacity: 1;
+    transform: translate(0,0);
+}
+}
+
+.animate.grow {
+    animation-name: animate-grow;
+  }
+  @keyframes animate-grow {
+    0% {
+      opacity: 0;
+      transform: scale(1, 0);
+      visibility: hidden;
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+}
+
+.animate.pop {
+    animation-name: animate-pop;
+  }
+  @keyframes animate-pop {
+    0% {
+      opacity: 0;
+      transform: scale(0.5, 0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+}
+
+.delay-1 {
+    animation-delay: 0.2s;
+    }
+    .delay-2 {
+    animation-delay: 0.3s;
+    }
+    .delay-3 {
+    animation-delay: 0.4s;
+    }
+    .delay-4 {
+    animation-delay: 0.5s;
+    }
+    .delay-5 {
+    animation-delay: 0.6s;
+    }
+    .delay-6 {
+    animation-delay: 0.7s;
+    }
+    .delay-7 {
+    animation-delay: 0.8s;
+    }
+    .delay-8 {
+    animation-delay: 0.9s;
+    }
+    .delay-9 {
+    animation-delay: 1s;
+    }
+    .delay-10 {
+    animation-delay: 1.2s;
+    }
+    .delay-11 {
+    animation-delay: 1.3s;
+    }
+    .delay-12 {
+    animation-delay: 1.4s;
+    }
+    .delay-13 {
+    animation-delay: 1.5s;
+    }
+    .delay-14 {
+    animation-delay: 1.6s;
+    }
+    .delay-15 {
+    animation-delay: 1.7s;
+    }
+
+
+
+
