@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Edit Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+	<script src="https://kit.fontawesome.com/c3481268b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/project.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				
+			<div class="p-4">
+				<h1><a href="home.html" class="logo">D.T.S<span>Management Framework</span><br></a></h1>
+				<ul class="list-unstyled components mb-5 accordion accordion-flush" id="accordionFlushExample">
+					<li class="active">
+						<a href="home.html"><span class="fa fa-home mr-3"></span> Home</a>
+					</li>
+					<li><hr></li>
+					<li>
+						<a href="projects.html"><span class="fa fa-tasks mr-3"></span> Projects</a>
+					</li>
+					<li>
+						<a href="clients.html"><span class="fa fa-user mr-3"></span> Clients</a>
+					</li>
+					<li><hr></li>
+					<li class="accordion-item">
+						<a href="forms.html"><span class="fa-solid fa-file"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Forms</a>
+						
+					</li>
+					<li>
+						<a href="documents.html"><span class="fa fa-folder mr-3"></span> Documents</a>
+					</li>
+					<li><hr></li>
+					<li>
+						<a href="login.html"><span class="fa-solid fa-right-from-bracket"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sign Out</a>
+					</li>
+					
+				</ul>
+				<div class="collapse" id="collapseExample">
+					<div class="card card-body">
+					  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+					</div>
+				  </div>
+	      	</div>
+    	</nav>
+
+		<div class="container-fluid justify-content-end">
+			<div class="row main justify-content-between">
+				<div class="col-sm-12 col-md-4 col-lg-4">
+					<h3 class="pageHeader"><a onclick="history.back()"><span class="fa fa-arrow-circle-left mr-3"></span></a> Profile</h3>
+				</div>
+				<div class="col-sm-12 col-md-8 col-lg-8"></div>
+			</div>
+
+            <div class="row sub justify-content-between">
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <form>
+                        <div class="cardNewProject animate slide delay-1">
+                            <div class="row justify-content-between">
+                                <div class="col-sm-12 col-md-5 col-lg-5">
+                                    
+                                    <h5 class="formSection1"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Personal Details</h5>								
+                                </div>
+                                <div class="col-sm-12 col-md-7 col-lg-7">
+                                    
+                                </div>
+                            </div>
+    
+                            <div class="row justify-content-between">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <br><br>
+                                    <h5 class="profileHeader">Name</h5>
+                                    <input type="text" class="form-control" id="userName" value="Vea Therese Cruz" aria-describedby="companyNameHelp" required>
+                                </div>
+                                
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <br><br>
+                                    <h5 class="profileHeader">Department</h5>
+                                    <select class="form-select" aria-label="Default select example" required>
+                                        <option selected disabled>Select Department</option>
+                                        <option value="1">Sales and Marketing</option>
+                                        <option value="2">Finance</option>
+                                        <option value="3">Engineering and Technical</option>
+                                    </select>
+                                </div>
+                            </div>
+    
+                            
+    
+                            <hr class="dividerNewProject">
+    
+                            <div class="row justify-content-between">
+                                <div class="col-sm-12 col-md-7 col-lg-7">
+                                    <h5 class="formSection1"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;&nbsp;Contact Details</h5>								
+                                </div>
+                                <div class="col-sm-12 col-md-5 col-lg-5"></div>
+                            </div>
+    
+                            <div class="row justify-content-between">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <br><br>
+                                    <h5 class="profileHeader">Email</h5>
+                                    <input type="email" class="form-control" id="userEmail" value="veatheresecruz@gmail.com" aria-describedby="companyNameHelp" required>
+                                </div>
+                                
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <br><br>
+                                    <h5 class="profileHeader">Contact Number</h5>
+                                    <input type="tel" class="form-control" id="userName" value="0912342323" aria-describedby="companyNameHelp" required>
+                                </div>
+                            </div>
+    
+                            <hr class="dividerNewProject">
+    
+                            <div class="row justify-content-between">
+                                <div class="col-sm-12 col-md-12 col-lg-12">
+                                    <input class="btn btn-primary submitButton" type="submit" value="Save Changes">
+                                </div>
+                            </div><br><br>
+                        </div>
+                    </form>
+                </div>
+
+				<div class="col-sm-12 col-md-4 col-lg-4 illustration1">
+
+				</div>
+            </div>
+			<br><br><br><br>
+		</div>
+      
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	<script src="js/status.js"></script>
+</body>
+</html>
